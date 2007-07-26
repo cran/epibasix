@@ -52,6 +52,12 @@ information bias.  Computational formulae can be found in the reference.
 Szklo M and Nieto FJ.  Epidemiology: Beyond the Basics, Jones and Bartlett: Boston, 2007.
 }
 
+\note{
+All confidence limits rely on simple asymptotic theory, as such, confidence limits
+may lie outside of [0,1].  A more accurate method is available in the twoby2 function
+of the Epi package, which employs a logit transformation.
+}
+
 \author{Michael Rotondi, \email{mrotondi@uwo.ca}}
 
 \seealso{\code{\link{kappa}}}
