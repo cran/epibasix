@@ -23,10 +23,10 @@ r$alpha <- alpha;
 #For notation, r1 = sum of first row, etc.
 a <- X[1,1]; b <- X[1,2]; c <- X[2,1]; d <- X[2,2];
 r1 <- a + b; r2 <- c + d; c1 <- a + c; c2 <- b+d;
-T <- r1 + r2;
+T1 <- r1 + r2;
 
 #Chi-Squared Test (With Continuity Correction)
-r$Sy <- T*((abs(a*d - b*c) - T/2)^2)/(c1*c2*r1*r2);
+r$Sy <- T1*((abs(a*d - b*c) - T1/2)^2)/(c1*c2*r1*r2);
 r$Sy.p.value <- 1- pchisq(r$Sy,1);  
 
 #Fisher's Exact

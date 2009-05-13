@@ -32,7 +32,7 @@ Result$p.value <- 2*pt(Result$test, Result$n - 1, lower.tail=FALSE);
 !(shapiro)
 {
 Result$shapiro.statistic <- shapiro.test(X)$statistic;
-Result$shaprio.p.value <- shapiro.test(X)$p.value;
+Result$shapiro.p.value <- shapiro.test(X)$p.value;
 }
 class(Result) <- "univar";
 return(Result);

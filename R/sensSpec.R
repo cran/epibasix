@@ -23,14 +23,14 @@ results$CL <- CL;
 #For notation, r1 = sum of first row, c1 = sum of first col. etc.
 a <- X[1,1]; b <- X[1,2]; c <- X[2,1]; d <- X[2,2];
 r1 <- a + b; r2 <- c + d; c1 <- a + c; c2 <- b+d;
-T <- r1 + r2;
+T1 <- r1 + r2;
 
 #Calculate point estimates...
 results$sens <- a/c1; results$spec <- d/c2;
 
 results$YoudenJ <- results$sens + results$spec - 1;
 
-results$PA <- (a +d)/(T);
+results$PA <- (a +d)/(T1);
 
 #Compute Confidence Limits if required
 if (CL)
@@ -43,7 +43,7 @@ results$spec.s <- sqrt(((results$spec*(1 - results$spec))/c2))
 results$spec.CIL <- results$spec - qnorm(1 - alpha/2)*results$spec.s
 results$spec.CIU <- results$spec + qnorm(1 - alpha/2)*results$spec.s
 
-results$PA.s <- sqrt(((results$PA*(1 - results$PA))/T))
+results$PA.s <- sqrt(((results$PA*(1 - results$PA))/T1))
 results$PA.CIL <- results$PA - qnorm(1 - alpha/2)*results$PA.s
 results$PA.CIU <- results$PA + qnorm(1 - alpha/2)*results$PA.s
 
@@ -94,5 +94,3 @@ if (object$CL){
 cat(100*(1-object$alpha), "% Confidence Limits for PA are: [", 100*round(object$PA.CIL,digits=object$digits), ", ", 100*round(object$PA.CIU,digits=object$digits),"]", "\n \n", sep="");
 }
 }
-
-

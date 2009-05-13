@@ -27,8 +27,8 @@ r$k0 <- k0; r$digits <- digits;
 r$alpha <- alpha;
 r$Data <- C;
 
-T <- sum(C);
-X <- C/T;
+T1 <- sum(C);
+X <- C/T1;
 
 r$p0 <- sum(diag(X));
 pe <- rep(NA, nrow(X));
@@ -89,11 +89,11 @@ CH <- (r$k0 -r$pe*(1-r$k0))^2;
 CC <- (r$kappa -r$pe*(1-r$kappa))^2;
 
 #Standard errors for hypothesis tests and CI's
-r$seH <- sqrt( (AH + BH -CH)/T )/(1-r$pe);
-r$seC <- sqrt( (AC + BC -CC)/T )/(1-r$pe);
+r$seH <- sqrt( (AH + BH -CH)/T1 )/(1-r$pe);
+r$seC <- sqrt( (AC + BC -CC)/T1 )/(1-r$pe);
 
 #Z Test for kappa
-r$Z <- abs(r$kappa - r$k0)/r$seH;
+r$Z <- (r$kappa - r$k0)/r$seH;
 r$p.value <- 1 - pnorm(r$Z);
 
 #CI's for kappa.
