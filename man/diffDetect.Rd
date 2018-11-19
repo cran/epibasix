@@ -42,7 +42,7 @@ if FALSE, a one-sided calculation is performed.}
 Matthews JNS.  Introduction to Randomized Controlled Clinical Trials (2nd Ed.) Chapman & Hall: New York, 2006.
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \examples{
 \dontrun{Suppose, for financial considerations we can only enroll 100 people in a blood

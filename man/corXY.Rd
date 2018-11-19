@@ -40,7 +40,7 @@ Casella G and Berger RL.  Statistical Inference (2nd Ed.) Duxbury: New York, 200
 Koepsell TD and Weiss NS.  Epidemiologic Methods.  Oxford University Press: New York, 2003.
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \examples{
 \dontrun{Suppose we want to test whether two randomly generated normal vectors are uncorrelated}

@@ -48,12 +48,14 @@ of as the expected prevalence of the outcome in the experimental and control gro
 Matthews JNS.  Introduction to Randomized Controlled Clinical Trials (2nd Ed.) Chapman & Hall: New York, 2006.
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \seealso{\code{\link{n4means}}}
 
 \examples{
-\dontrun{Suppose a new drug is thought to reduce heart attack mortality from 0.10 to 0.03. Calculate the required number of subjects that must be enrolled in a study to detect this difference with alpha = 0.05 and power = 0.80.}
+\dontrun{Suppose a new drug is thought to reduce heart attack mortality from 
+0.10 to 0.03. Calculate the required number of subjects that must be enrolled 
+in a study to detect this difference with alpha = 0.05 and power = 0.80.}
 n4props(0.03, 0.10, AR=1, alpha=0.05, power=0.80);
 }
 

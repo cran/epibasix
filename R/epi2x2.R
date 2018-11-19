@@ -67,7 +67,7 @@ cat("Epidemiological 2x2 Table Analysis", "\n \n");
 cat("Input Matrix: \n")
 print(x$X)
 cat("\n", "Pearson Chi-Squared Statistic (Includes Yates' Continuity Correction): ", round(x$Sy, digits=x$digits), "\n", sep="")
-cat("Associated p.value for H0: There is an association between exposure and outcome vs. HA: No association : ",  round(x$Sy.p.value, digits=x$digits), "\n", sep="")
+cat("Associated p.value for H0: There is no association between exposure and outcome vs. HA: There is an association : ",  round(x$Sy.p.value, digits=x$digits), "\n", sep="")
 cat("p.value using Fisher's Exact Test: ",  round(x$Fisher.p.value, digits=x$digits), "\n \n", sep="");
 
 cat("Estimate of Odds Ratio: ",  round(x$OR, digits=x$digits), "\n", sep="")
@@ -81,7 +81,7 @@ cat("Epidemiological 2x2 Table Analysis", "\n \n");
 cat("Input Matrix: \n")
 print(object$X)
 cat("\n", "Pearson Chi-Squared Statistic (Includes Yates' Continuity Correction): ", round(object$Sy, digits=object$digits), "\n", sep="")
-cat("Associated p.value for H0: There is an association between exposure and outcome vs. HA: No association : ",  round(object$Sy.p.value, digits=object$digits), "\n", sep="")
+cat("Associated p.value for H0: There is no association between exposure and outcome vs. HA: There is an association : ",  round(object$Sy.p.value, digits=object$digits), "\n", sep="")
 cat("p.value using Fisher's Exact Test (1 DF) : ",  round(object$Fisher.p.value, digits=object$digits), "\n \n", sep="");
 
 cat("Estimate of Odds Ratio: ",  round(object$OR, digits=object$digits), "\n", sep="")

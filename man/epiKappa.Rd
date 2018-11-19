@@ -47,7 +47,7 @@ Szklo M and Nieto FJ.  Epidemiology: Beyond the Basics, Jones and Bartlett: Bost
 Fleiss J.  Statistical Methods for Rates and Proportions, 2nd ed.  New York: John Wiley and Sons; 1981.
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \seealso{\code{\link{sensSpec}}}
 

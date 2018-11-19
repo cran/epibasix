@@ -50,7 +50,7 @@ true population mean.}
 \references{
 Casella G and Berger RL.  Statistical Inference (2nd Ed.) Duxbury: New York, 2002.
 }
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \examples{
 x <- rexp(100);

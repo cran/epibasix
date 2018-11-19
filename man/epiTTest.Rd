@@ -54,7 +54,7 @@ Szklo M and Nieto FJ.  Epidemiology: Beyond the Basics, Jones and Bartlett: Bost
 
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \examples{
 X <- rnorm(100,10,1);

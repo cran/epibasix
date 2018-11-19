@@ -58,7 +58,7 @@ may lie outside of [0,1].  A more accurate method is available in the twoby2 fun
 of the Epi package, which employs a logit transformation.
 }
 
-\author{Michael Rotondi, \email{mrotondi@uwo.ca}}
+\author{Michael Rotondi, \email{mrotondi@yorku.ca}}
 
 \seealso{\code{\link{kappa}}}
 

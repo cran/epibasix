@@ -1,3 +1,29 @@
 # Exports all functions not beginning with a period.
 exportPattern("^[^\\.]") 
 
+#Import other helper functions
+importFrom("stats", "cor", "fisher.test", "median", "pchisq", "pnorm",
+             "pt", "qnorm", "qt", "sd", "shapiro.test", "var")
+
+#Register S3
+S3method(print, corXY)
+S3method(print, diffDetect)
+S3method(print, epi2x2)
+S3method(print, epiKappa)
+S3method(print, epiTTest)
+S3method(print, mcNemar)
+S3method(print, n4means)
+S3method(print, n4props)
+S3method(print, sensSpec)
+S3method(print, univar)
+
+S3method(summary, corXY)
+S3method(summary, diffDetect)
+S3method(summary, epi2x2)
+S3method(summary, epiKappa)
+S3method(summary, epiTTest)
+S3method(summary, mcNemar)
+S3method(summary, n4means)
+S3method(summary, n4props)
+S3method(summary, sensSpec)
+S3method(summary, univar)
